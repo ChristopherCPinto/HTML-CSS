@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping tags</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: lightgray;
+            margin: 0px;
+            
+        }
+
+        header {
+
+            padding: 0px;
+            margin: 10px;
+            background-color: white;
+            border-radius: 10px;
+        }
+
+        nav {
+            background-color: grey;
+            padding: 10px;
+            border-radius: 5px;
+            box-shadow: 1px 2px 6px black;
+        }
+
+        nav>a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            margin-right: 30px;
+        }
+
+        nav>a:hover {
+            color: blue;
+
+        }
+
+        main {
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 10px;
+        }
+
+        article {
+            background-color: aqua;
+            padding: 5px;
+            border-radius: 10px;
+        }
+
+        article>aside {
+            background-color: darkslateblue;
+            padding: 1px;
+            border-radius: 10px;
+
+        }
+
+        
+
+        footer>p {
+            
+            background-color: black;
+            margin: 0px;
+            color: white;
+            font-size: 1.2em;
+            text-align: center;
+        }
+
+        #asunto {
+            color: black;
+            background-color: gold;
+            padding: 10px;
+            margin-bottom: 10px;
+            font-weight: bolder;
+            border-radius: 10px;
+
+        }
+
+        #noticias2 {
+            background-color: aqua;
+            padding: 10px;
+            margin-top: 10px;
+            border-radius: 15px;
+        }
+
+        header h1 {
+            color: red;
+            text-align: center;
+            background-color: aqua;
+            padding: 10px;
+            border-radius: 10px;
+        }
+
+        div#bola {
+            height: 100px;/*ALTURA*/
+            width: 100px;/*LARGURA*/
+            background-color: black;
+            border-radius: 50%;
+            margin: 5px;
+            
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Meu site</h1>
+        <nav>
+            <a href="#">Link 1</a>
+            <a href="#">Link 2</a>
+            <a href="#">Link 3</a>
+            <a href="#">Link 4</a>
+            <a href="#">Link 5</a>
+        </nav>
+
+    </header>
+
+    <main>
+        <section id="asunto">
+            <p>
+                Apoiador do Mundo
+            </p>
+        </section>
+            <section id="noticias">
+                <article>
+                    <h1>
+                        Noticias sobre o Brasil
+                    </h1>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis ipsa maxime iusto eveniet error
+                        non unde nostrum deleniti, molestiae rem assumenda quia, magnam ipsum. Accusantium saepe dolorum
+                        aut! Quas, facere?
+                    </p>
+                    <aside>
+                        <p>
+                            Artigo escrito por Chris
+                        </p>
+                    </aside>
+                </article>
+            </section>
+        <section id="noticias2">
+            <h1>
+                Falando de Roma
+            </h1>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam cumque fuga ab temporibus, iste
+                laboriosam quasi nisi ipsam dolor, cum perferendis quam voluptatem ex eaque, quos aliquid molestiae
+                repellendus commodi?
+            </p>
+
+        </section>
+
+    </main>
+        <footer>
+            <p>
+                Desenvolvido por Christopher
+            </p>
+        </footer>
+        <div id="bola"></div>
+    </body>
+</head>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pr-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de holver</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        div>p {
+            /*ALTERANDO SOMENTE PARAGRAFO DENTRO DA DIV*/
+            display: none;
+            /*ESCONDENDO O PARAGRAFO DENTRO DA DIV*/
+        }
+
+        div:hover>p {
+            display: block;
+            /*MOSTRANDO O PARAGRAFO DENTRO DA DIV QUANDO PASSADO O MOUSE POR CIMA DA FRASE*/
+            color: white;
+            background-color: black;
+            width: 200px;
+            /*AJUNSTANDO O TAMANHO DO BACKGROUND*/
+        }
+
+        #teste {
+            /*ALTERANDO A DIV COM ID DE NOME TESTE*/
+            color: white;
+            background-image: linear-gradient(to left, rgb(50, 50, 241),rgb(48, 44, 44));
+            width: 600px;
+            height: 50px;
+            text-align: center;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Exemplo de holver</h1>
+    <p>Passe o mouse sobre o texto abaixo</p>
+    <div>Passe o mouse aqui!
+        <p>TEXTO ESCONDINDO</p>
+    </div>
+    <div id="teste">
+        01
+
+    </div>
+
+</body>
+
+</html>

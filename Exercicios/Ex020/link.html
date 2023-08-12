@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+    <style>
+
+        /*
+        SELETORES PERSONALIZADOS
+        # = id
+        . = class
+        : = pseudo class
+        :: = pseudo element
+        > = children (filho)
+        */
+        @import url('https://fonts.googleapis.com/css2?family=Lugrasimo&display=swap');
+
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-image: linear-gradient(to left, grey, lightblue);
+        }
+
+        a {
+            color: red;
+            text-decoration: none;
+            font-weight: bold;
+            font-family: 'Lugrasimo', cursive;
+
+        }
+
+        a:visited {
+            /*pseudo classe*/
+            color: darkred;
+        }
+
+        a:hover {
+            /*MOSTRANDO A LINHA QUANDO PASSA O MOUSE POR CIMA DO LINK*/
+            color: black;
+            text-decoration: underline;
+        }
+
+        a:active {
+            /*MUDA A COR DO LIK QUANDO É CLICADO EM CIMA*/
+            color: deepskyblue;
+        }
+
+        h1 {
+            color: white;
+            text-align: center;
+        }
+
+        #titulo {
+            background-image: radial-gradient(circle, red, blue);
+        }
+
+        .especial::before {
+            content: '⇒';
+        }
+
+        .especial::after {
+            content: '⇐';
+        }
+        .especial{
+            background-color: aqua;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div id="titulo">
+        <h1>Personalizando Links</h1>
+    </div>
+
+    <ul>
+
+        <li>
+            <a href="https://gustavoguanabara.github.io" target="_blank"> Repositorio GitHub </a>
+        </li>
+
+        <li>
+            <a href="https://youtube.com/cursoemvideo" class="especial" target="_blank">Canal do Youtube </a>
+        </li>
+
+        <li>
+            <a href="https://www.cursoemvideo.com" target="_blank">Site para curso em vídeo </a>
+        </li>
+
+
+    </ul>
+
+</body>
+
+</html>
