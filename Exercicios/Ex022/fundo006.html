@@ -6,21 +6,35 @@
     <title>Document</title>
 <style>
     body{
+
+        
         height: 100vh;
         background-color: black;
         background-image: url(imagens/wallpaper002.jpg);
         background-position:center center;
         background-repeat: no-repeat;
-        background-size: cover;
+        background-size: cover;/*certificar de que a imagem cobrirá sempre o contêiner inteiro*/
+        background-attachment: fixed;/*Fixando a imagem de backgound e somente o texto rola na tela*/
+
+        /*Se quiser usar Shorthand - backgoud*/
+
+        /*
+        background:black url('imagens/wallpaper002.jpg') center center no-repeat cover fixed;
+        */
+      
+        
+
+        
 
     }
     main{
         background-color: white;
-        width:400px ;
+        max-width:200px ;
         padding: 10px;
         margin: auto;
         border: 1px solid blue;
         border-radius: 15px;
+        
         
     }
     p{
@@ -36,7 +50,10 @@
     <main>
         <h1>Teste de Imagem de Fundo</h1>
 
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor maxime consequatur, aut laborum labore excepturi molestias tenetur ad sint aperiam deleniti magnam possimus officiis suscipit accusamus nesciunt perferendis aliquam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis inventore saepe eum libero quia, laboriosam velit atque officiis assumenda dolorum animi deserunt. Repellendus eum deserunt, rem doloremque reprehenderit possimus quidem?</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor maxime consequatur, aut laborum labore excepturi molestias tenetur ad sint aperiam deleniti magnam possimus officiis suscipit accusamus nesciunt perferendis aliquam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis inventore saepe eum libero quia, laboriosam velit atque officiis assumenda dolorum animi deserunt. Repellendus eum deserunt, rem doloremque reprehenderit possimus quidem?
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore cumque ratione a culpa est dolore modi et aspernatur beatae! Dolor nostrum earum non harum iusto sed natus ut a eveniet.
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odit illo rem architecto quas placeat accusantium aliquam iusto! Possimus, a culpa. Facilis laudantium sit est aspernatur numquam necessitatibus distinctio, quas incidunt.cor
+        </p>
     </main>
     
 </body>
