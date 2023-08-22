@@ -63,6 +63,7 @@ section{
     padding-left: 30px;
     font-family: var(--fonte03 );
     font-size: 3.5vw;
+    
 }
 
 section.normal{
@@ -80,6 +81,7 @@ section.imagem > p{
     display: inline-block;/*CRIANDO A CAIXA Q SE ADAPTA AO CONTEUDO*/
     background-color: rgba(0, 0, 0, 0.253);
     padding: 5px;
+    border-radius: 10px;
 }
 
 
