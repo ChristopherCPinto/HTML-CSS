@@ -43,6 +43,11 @@ header h1 {
 header p{   
     padding-bottom: 50px;
     
+    
+}
+section p{/*ESPAÇO ENTREO OS PARAGRAFOS*/
+    padding-bottom: 2em; 
+    
 }
  a{
     text-decoration: none;
@@ -75,15 +80,30 @@ section.normal{
 section.imagem{
     background-color: rgb(51, 51, 51);
     color: white;
+    box-shadow: inset 6px 6px 13px 0px black;
+    background-size: cover;/*faz com que a imagem cubra o container por inteiro*/
+    background-attachment: fixed;
 }
 
 section.imagem > p{
     display: inline-block;/*CRIANDO A CAIXA Q SE ADAPTA AO CONTEUDO*/
-    background-color: rgba(0, 0, 0, 0.253);
+    background-color: rgba(0, 0, 0, 0.548);
     padding: 5px;
     border-radius: 10px;
+    text-shadow: 1px 1px 0px black;
 }
 
+section#img01{
+    background-image: url(imagens/background001.jpg);
+    background-position: right center;
+    
+
+}
+section#img02{
+    background-image: url(imagens/background002.jpg);
+   
+    
+}
 
 footer{
     background-color: black;
