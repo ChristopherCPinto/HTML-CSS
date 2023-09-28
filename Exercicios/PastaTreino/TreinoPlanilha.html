@@ -1,62 +1,65 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        
-        body{
+        body {
             font-family: Arial, Helvetica, sans-serif;
-            margin-top: 0px;
+
         }
-        table{
+
+        table {
             border-collapse: collapse;
             position: relative;
             width: 500px;
-            
-            
+
+
         }
 
-        th,td{
+        th,
+        td {
             border: 1px solid black;
             padding: 10px;
-            color:white;
-
         }
 
-        thead{
+        thead,
+        tfoot {
+            background-color: black;
+            color: white;
+        }
+
+        thead>tr>th {
+            position: sticky;
+            top: 0;
             background-color: black;
         }
 
-       thead > tr > th{
-            position: sticky;
-            top: 0;            
+        caption {
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: lightgray;
         }
-       
 
-        table > tbody > tr > td{
-            color: red;
-            border: 1px solid black;
-            padding: 5px;
+        tbody tr:nth-child(2n){
+            background-color: aqua;
             
-            
+
         }
-        
-
-
     </style>
 </head>
+
 <body>
-    
+
 
     <table>
+        <caption>Pulação da Unidade Federativas</caption>
         <thead>
-            <tr>
-                
-                <th scope="col">Nome</th>
-                <th scope="col">CPF</th>
-            </tr>
+            <th scope="col">Nome</th>
+            <th scope="col">CPF</th>
         </thead>
 
         <tbody>
@@ -177,7 +180,12 @@
                 <td>10</td>
             </tr>
         </tbody>
+        <tfoot>
+            <th>Total</th>
+            <td>1000.000.000.000.00</td>
+        </tfoot>
     </table>
-    
+
 </body>
+
 </html>
