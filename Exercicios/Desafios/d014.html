@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      
+      *{
+        margin-top: 0;
+
+      }
+      body{
+            font-family: Arial, Helvetica, sans-serif;
+
+        }
+      
+        table{
+            border-collapse: collapse;
+        }
+        tr, th, td{
+            border: 1px solid black;
+            padding: 10px;
+            
+            
+           
+        }
+        .cinza{
+            background-color: grey;
+            padding: 7px;
+            font-weight: bolder;
+            color: white;
+        }
+        thead{
+            background-color: lemonchiffon;
+        }
+
+    </style>
+</head>
+<body>
+    <table>
+        <caption class="cinza">NOTAS</caption>
+        <thead>
+            <tr>
+                <th rowspan="2" scope="col">Área</th>
+                <th rowspan="2" scope="col">Diciplinas</th>
+                <th colspan="2" scope="colgroup">NOTAS</th>
+                <th rowspan="2" scope="col">MEDIA</th>
+                
+                
+                <tr>
+                    <th scope="col">NOTA 1</th>
+                    <th scope="col">NOTA 2</th>
+                </tr>
+            </tr>
+        </thead>
+        <tbody>
+            
+            <tr>
+                <th rowspan="4" scope="rowgroup">EXATAS</th>
+                <td>Matemática</td>
+                <td>98</td>
+                <td>98</td>
+                <td>98</td>
+
+            </tr>
+            <tr>
+                <td>Física</td>
+                <td>98</td>
+                <td>98</td>
+                <td>98</td>
+            </tr>
+            <tr>
+                <td>Quimica</td>
+                <td>98</td>
+                <td>98</td>
+                <td>98</td>
+            </tr>
+            <tr>
+                <td>Biologia</td>
+                <td>98</td>
+                <td>98</td>
+                <td>98</td>
+            </tr>
+            <tr class="cinza">
+                <th colspan="4" class="cinza">MÉDIA DE EXATAS</th>
+                <td >98</td>
+            </tr>
+            <tr>
+                <th rowspan="2" scope="rowgroup">HUMANAS</th>
+                <td>História</td>
+                <td>50</td>
+                <td>50</td>
+                <td>50</td>
+            </tr>
+            <tr>
+                
+                <td>Geografia</td>
+                <td>50</td>
+                <td>50</td>
+                <td>50</td>
+            </tr>
+            <tr class="cinza">
+                <th colspan="4">MEDIA DE HUMANAS</th>
+                <td>50</td>
+            </tr>
+
+        </tbody>
+    </table>
+    
+</body>
+</html>
