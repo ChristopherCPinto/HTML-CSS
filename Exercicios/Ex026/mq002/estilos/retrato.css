@@ -1,0 +1,14 @@
+@charset "UTF-8";
+
+/*APARELHO EM PÉ (PORTRAIT) */
+
+body{
+    background-image: url(../imagens/cev-portrait.jpg);
+    background-position: center bottom;
+    
+}
+h1{
+    color: black;
+    text-shadow: 3px 3px 3px white;
+    font-weight: 900;
+}

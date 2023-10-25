@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <style>
+        .caixa{
+            border-radius: 10px;
+            background-color: lightgrey;
+        }
+        h1{
+            text-align: center;
+        }
+
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: 900;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Exemplo de Formulário</h1>
+
+    <form action="cadastro.php" method="post" autocomplete="on">
+
+        <fieldset class="caixa">
+            <p>
+                <label for="icor">Cor:</label>
+                <input type="color" name="Cor" id="icor">
+            </p>
+        </fieldset><br>
+        <fieldset class="caixa">
+
+            <p>
+                <label for="inivel">Nivel de Satisfação:</label>
+                <input type="range" name="nivel" id="inivel"><!--BARRA DESLIJANTE-->
+            </p>
+        </fieldset><br>
+
+        <fieldset class="caixa">
+            <p>
+                <label for="iimagem">Anexar imagem:</label>
+                <input type="file" name="imagem" id="iimagem">
+            </p>
+        </fieldset>
+
+        
+        
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+        
+
+
+
+    </form>
+    
+</body>
+</html>

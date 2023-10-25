@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Exemplo de Formulário</h1>
+    <form action="cadastro.php" method="get" autocomplete="on">
+
+        <fieldset><!--Faz a borda em volta dos inputs-->
+            <legend>Dados Pessoais</legend> <!--Coloca a legenda na borda-->
+            <p>
+                <label for="iNome">Nome</label>
+                <input type="text=" name="nome" id="iNome" required
+                placeholder="Inf Seu Nome">
+            </p>
+            <p>
+                <label for="imail">Email</label>
+                <input type="email" id="imail" name="email" required
+                placeholder="Inf Seu E-mail">
+            </p>
+            <p>
+                <label for="itelefone">Telefone:</label>
+                <input type="tel" id="itelefone" required placeholder="(xx)xxxx-xxxx" name="telefone" autocomplete="tel" pattern="^\(\d{2}\)\d{4,5}-\d{4}$">
+            </p>
+            
+        </fieldset>
+        
+        <p><input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+    
+    
+</body>
+</html>

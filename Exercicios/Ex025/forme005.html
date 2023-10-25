@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de Formulário</title>
+    <style>
+        
+        fieldset{
+            background-color:white;
+            padding: 15px;
+            border-radius: 10px;
+
+        }
+
+        body{
+            background-color: darkgrey;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bolder;
+            margin: 0px;
+        }
+        #env{
+            background-color: green;
+            width: 100px;
+            height: 30px;
+            color: white;
+            font-size: 1.2em;
+            border-radius: 10px;
+            cursor: pointer;
+
+        }
+
+        #lin{
+            background-color:aqua;
+            width: 100px;
+            height: 30px;
+            
+            font-size: 1.2em;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+
+        .ponteiroMouse{
+            cursor: pointer;
+        }
+        input, label{
+            cursor: pointer;
+        }
+
+        legend{
+            background-color:aqua;
+            border-radius: 10px ;
+            margin-top: 10px;
+            padding: 10px;
+            font-weight: bold;
+        }
+        h1{
+            text-align: center;
+        }
+
+        footer{
+            background-color: black;
+            color: white;
+            text-align: center;  
+                     
+        }
+
+        footer h3{
+            padding: 10px;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Exemplo de Formulário</h1>
+
+    <form action="cadastro.php" method="get" autocomplete="on">
+        <fieldset>
+            <legend>Sexo</legend>
+            <input type="radio" name="sexo" id="isexmasc" value="M" >
+            <label for="isexmasc" >Masculino</label><br>
+
+            <input type="radio" name="sexo" id="isexfem" value="F">
+            <label for="isexfem" >Feminino</label>
+        </fieldset>
+
+        <fieldset>
+            <legend>Esporte Favorito</legend>
+            
+            <input type="checkbox" name="basquete" id="Ibas">
+            <label for="Ibas">Basquete</label><br> 
+
+            <input type="checkbox" name="futebol" id="ifut" checked>
+            <label for="ifut">Futebol</label><br>
+
+            <input type="checkbox" name="natacao" id="inat">
+            <label for="inat">Natação</label><br>
+
+            <input type="checkbox" name="tenis" id="iten">
+            <label for="iten">Tenis</label>
+        </fieldset>
+        <p>
+            <input type="submit" value="Enviar" id="env">
+            <input type="reset" value="Limpar" id="lin">
+        </p>
+    </form>
+
+    <footer>
+        <h3>DESENVOLVIDO POR CHRISTOPHER</h3>
+    </footer>
+    
+</body>
+</html>
